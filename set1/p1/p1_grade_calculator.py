@@ -28,8 +28,13 @@ def get_status(average):
         return "Passed"
     return "Failed"
 
-sample = [80, 90, 70]
-print(compute_average(sample))
-print(get_highest(sample))
-print(get_lowest(sample))
-print(get_status(compute_average(sample)))
+def get_valid_grade():
+    while True:
+        try:
+            grade = float(input("Enter a grade (0-100): "))
+            if 0 <= grade <= 100:
+                return grade
+            print("Grade must be from 0 to 100.")
+        except ValueError:
+            print("Please enter a number only.")
+
