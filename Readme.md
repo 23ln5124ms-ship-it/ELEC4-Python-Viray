@@ -23,4 +23,4 @@
 ## Screenshots
 
 ### P1
-![P1 output](set1/p1/screenshots/p1_output.png)
+![P1 output](set1/p1/screenshots/P1_Student_Grade_Calculator.png)
