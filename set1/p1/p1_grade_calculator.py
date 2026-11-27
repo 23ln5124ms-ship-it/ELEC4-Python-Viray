@@ -42,11 +42,11 @@ def main():
             count = int(input("How many grades? "))
             for i in range(count):
                 grades.append(get_valid_grade())
-            print("Grades saved:", grades)
+            print("\n Grades saved:", grades)
 
         elif choice == "2":
             if len(grades) == 0:
-                print("No grades yet. Choose option 1 first.")
+                print("\n No grades yet. Choose option 1 first.")
             else:
                 average = compute_average(grades)
                 print("Average:", average)
