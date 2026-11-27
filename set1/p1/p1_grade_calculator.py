@@ -38,3 +38,20 @@ def get_valid_grade():
         except ValueError:
             print("Please enter a number only.")
 
+grades = []
+
+def main():
+    while True:
+        print("\n=== Student Grade Calculator - Mariel Viray ===")
+        print("1. Enter grades")
+        print("2. View results")
+        print("3. Exit")
+        choice = input("Choose an option: ")
+
+        if choice == "3":
+            print("Goodbye!")
+            break
+        else:
+            print("Not ready yet.")
+
+main()
