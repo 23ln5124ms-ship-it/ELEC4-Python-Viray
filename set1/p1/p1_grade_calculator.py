@@ -48,22 +48,17 @@ def main():
         print("3. Exit")
         choice = input("Choose an option: ")
 
+        if choice == "1":
+            grades.clear()
+            count = int(input("How many grades? "))
+            for i in range(count):
+                grades.append(get_valid_grade())
+            print("Grades saved:", grades)
+        
         if choice == "3":
             print("Goodbye!")
             break
         else:
             print("Not ready yet.")
 
-main(        if choice == "1":
-            grades.clear()
-            count = int(input("How many grades? "))
-            for i in range(count):
-                grades.append(get_valid_grade())
-            print("Grades saved:", grades)
-
-        elif choice == "3":
-            print("Goodbye!")
-            break
-
-        else:
-            print("Not ready yet."))
+main()
