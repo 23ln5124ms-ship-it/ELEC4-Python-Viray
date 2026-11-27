@@ -62,3 +62,10 @@ def main():
             print("Invalid choice. Please pick 1, 2, or 3.")
 
 main()
+
+# Explanation of global and local variables:
+# A global variable is a variable I made outside of the functions, so any part of my program can use it.
+# In my program, grades = [] is global, that's why main() can add grades and read them later.
+# A local variable is made inside a function, so it only works inside that function.
+# Like for example, average is local to main(), and grade is local to get_valid_grade().
+# If I try to print average outside main(), it gives a NameError because it doesn't exist there.
