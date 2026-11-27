@@ -54,4 +54,16 @@ def main():
         else:
             print("Not ready yet.")
 
-main()
+main(        if choice == "1":
+            grades.clear()
+            count = int(input("How many grades? "))
+            for i in range(count):
+                grades.append(get_valid_grade())
+            print("Grades saved:", grades)
+
+        elif choice == "3":
+            print("Goodbye!")
+            break
+
+        else:
+            print("Not ready yet."))
