@@ -17,17 +17,6 @@ def get_status(average):
         return "Passed"
     return "Failed"
 
-def get_highest(grades):
-    return max(grades)
-
-def get_lowest(grades):
-    return min(grades)
-
-def get_status(average):
-    if average >= 75:
-        return "Passed"
-    return "Failed"
-
 def get_valid_grade():
     while True:
         try:
@@ -66,7 +55,7 @@ def main():
                 print("Status:", get_status(average))
 
         elif choice == "3":
-            print("Goodbye!")
+            print("Thank You for using the Student Grade Calculator, Goodbye!")
             break
 
         else:
