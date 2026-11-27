@@ -42,7 +42,7 @@ grades = []
 
 def main():
     while True:
-        print("\n=== Student Grade Calculator - Mariel Viray ===")
+        print("\n=== Student Grade Calculator ===")
         print("1. Enter grades")
         print("2. View results")
         print("3. Exit")
@@ -54,11 +54,22 @@ def main():
             for i in range(count):
                 grades.append(get_valid_grade())
             print("Grades saved:", grades)
-        
-        if choice == "3":
+
+        elif choice == "2":
+            if len(grades) == 0:
+                print("No grades yet. Choose option 1 first.")
+            else:
+                average = compute_average(grades)
+                print("Average:", average)
+                print("Highest:", get_highest(grades))
+                print("Lowest:", get_lowest(grades))
+                print("Status:", get_status(average))
+
+        elif choice == "3":
             print("Goodbye!")
             break
+
         else:
-            print("Not ready yet.")
+            print("Invalid choice. Please pick 1, 2, or 3.")
 
 main()
