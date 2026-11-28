@@ -23,4 +23,25 @@
 ## Screenshots
 
 ### P1
-![P1 output](set1/p1/screenshots/P1_Student_Grade_Calculator.png)
+![P1](set1/p1/screenshots/P1_Input_Validation.png)
+![P1](set1/p1/screenshots/P1_Menu_and_Exit.png)
+![P1](set1/p1/screenshots/P1_Student_Grade_Calculator.png)
+
+### P2
+![P2](set1/p2/screenshots/P2_Output.png)
+![P2](set1/p2/screenshots/P2_Student_Grade_Reort.png)
+
+### P3
+![P3](set1/p3/screenshots/P3_Add_Student.png)
+![P3](set1/p3/screenshots/P3_Display_all_Students.png)
+![P3](set1/p3/screenshots/P3_Exit.png)
+![P3](set1/p3/screenshots/P3_Name_Duplication.png)
+![P3](set1/p3/screenshots/P3_Search_Name.png)
+![P3](set1/p3/screenshots/P3_Student_Already_in_the_List.png)
+![P3](set1/p3/screenshots/P3_Student_Remove.png)
+
+### P4
+![P4](set1/p4/screenshots/P4_Divide_by_Zero.png)
+![P4](set1/p4/screenshots/P4_File_does_not_Exist.png)
+![P4](set1/p4/screenshots/P4_Invalid_Choice.png)
+![P4](set1/p4/screenshots/P4_Invalid_Input.png)
