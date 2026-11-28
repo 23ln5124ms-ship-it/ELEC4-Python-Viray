@@ -71,9 +71,7 @@ def main():
 
 main()
 
-# add_student()
-# add_student()
-# display_students()
-# search_student()
-# remove_student()
-# display_students()
+# A list keeps its items in order and can have the same item more than once.
+# A set does not allow duplicates and has no fixed order.
+# I used a set for students, so the same name can't be added twice.
+# I used sorted(students) when displaying, which gives a list in alphabetical order.
