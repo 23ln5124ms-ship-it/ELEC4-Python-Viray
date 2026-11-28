@@ -32,7 +32,7 @@ def search_student():
     found = False
     for name in sorted(students):
         if keyword in name:
-            print("Found:", name.title())
+            print("\nFound:", name.title())
             found = True
     if not found:
         print("No student found.")
