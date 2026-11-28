@@ -30,7 +30,7 @@ def open_file():
 
 def main():
     while True:
-        print("\n=== Safe Menu Program - Mariel Viray ===")
+        print("\n=== Safe Menu Program ===")
         print("1. Divide two numbers")
         print("2. Open a file")
         print("3. Exit")
