@@ -13,5 +13,28 @@ def add_student():
         students.add(name)
         print("Student added.")
 
+def display_students():
+    if len(students) == 0:
+        print("No students yet.")
+    else:
+        print("\n--- Student List ---")
+        number = 1
+        for name in sorted(students):
+            print(number, ".", name.title())
+            number += 1
+        print("Total:", len(students))
+
+def search_student():
+    keyword = input("Search name: ").strip().lower()
+    found = False
+    for name in sorted(students):
+        if keyword in name:
+            print("Found:", name.title())
+            found = True
+    if not found:
+        print("No student found.")
+
 add_student()
 add_student()
+display_students()
+search_student()
