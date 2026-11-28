@@ -20,7 +20,7 @@ def display_students():
     if len(students) == 0:
         print("No students yet.")
     else:
-        print("\n--- Student List ---")
+        print("\n=== Student List ===")
         number = 1
         for name in sorted(students):
             print(number, ".", name.title())
@@ -71,9 +71,9 @@ def main():
 
 main()
 
-add_student()
-add_student()
-display_students()
-search_student()
-remove_student()
-display_students()
+# add_student()
+# add_student()
+# display_students()
+# search_student()
+# remove_student()
+# display_students()
