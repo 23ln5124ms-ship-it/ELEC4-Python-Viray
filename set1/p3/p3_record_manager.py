@@ -34,7 +34,17 @@ def search_student():
     if not found:
         print("No student found.")
 
+def remove_student():
+    name = input("Enter name to remove: ").strip().lower()
+    if name in students:
+        students.remove(name)
+        print("Student removed.")
+    else:
+        print("That student is not in the list.")
+        
 add_student()
 add_student()
 display_students()
 search_student()
+remove_student()
+display_students()
