@@ -17,4 +17,15 @@ def divide_numbers():
     finally:
         print("Division finished.")
 
+def open_file():
+    filename = input("Enter file name: ")
+    try:
+        with open(filename, "r") as file:
+            content = file.read()
+    except FileNotFoundError:
+        print("Error: that file does not exist.")
+    else:
+        print("\n--- File contents ---")
+        print(content)
+
 divide_numbers()
