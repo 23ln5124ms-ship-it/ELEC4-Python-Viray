@@ -25,7 +25,27 @@ def open_file():
     except FileNotFoundError:
         print("Error: that file does not exist.")
     else:
-        print("\n--- File contents ---")
+        print("\n=== File contents ===")
         print(content)
+
+def main():
+    while True:
+        print("\n=== Safe Menu Program - Mariel Viray ===")
+        print("1. Divide two numbers")
+        print("2. Open a file")
+        print("3. Exit")
+        choice = input("Choose an option: ")
+
+        if choice == "1":
+            divide_numbers()
+        elif choice == "2":
+            open_file()
+        elif choice == "3":
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please pick 1, 2, or 3.")
+
+main()
 
 divide_numbers()
