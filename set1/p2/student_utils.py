@@ -1,7 +1,7 @@
 # Name: Mariel Viray
 # Section: IV-BSIT B
 # Activity: P2 - student_utils module
-# Date: November 2026
+# Date: November 27, 2026
 
 def compute_average(grades):
     return sum(grades) / len(grades)

@@ -3,6 +3,9 @@
 # Activity: P3 - Student Record Manager
 # Date: November 2026
 
+from pdb import main
+
+
 students = set()   # a set: no duplicates allowed
 
 def add_student():
@@ -41,7 +44,33 @@ def remove_student():
         print("Student removed.")
     else:
         print("That student is not in the list.")
-        
+
+def main():
+    while True:
+        print("\n=== Student Record Manager - Mariel Viray ===")
+        print("1. Add student")
+        print("2. Remove student")
+        print("3. Search student")
+        print("4. Display all students")
+        print("5. Exit")
+        choice = input("Choose an option: ")
+
+        if choice == "1":
+            add_student()
+        elif choice == "2":
+            remove_student()
+        elif choice == "3":
+            search_student()
+        elif choice == "4":
+            display_students()
+        elif choice == "5":
+            print("Goodbye!")
+            break
+        else:
+            print("Invalid choice. Please pick 1 to 5.")
+
+main()
+
 add_student()
 add_student()
 display_students()
